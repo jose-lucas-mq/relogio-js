@@ -7,8 +7,8 @@ function time(){
     let segundos = agora.getSeconds();
 
     s_segundos.innerHTML = segundos;
-    s_horas.innerHTML = horas;
-    s_minutos.innerHTML = minutos;
+    s_horas.innerHTML = horas + ' :';
+    s_minutos.innerHTML = minutos + ' :';
 
     if(String(segundos).length == 1){
         s_segundos.innerHTML = `0${segundos}`;

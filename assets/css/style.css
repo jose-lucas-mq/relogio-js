@@ -5,4 +5,45 @@
 
 body{
     font-family: 'Candal', sans-serif;
+    background-color: #05af3e;
+    color: #fff;
+    overflow: hidden;
 }
+
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.waves{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 130%;
+
+}
+
+.wave{
+ animation: onda 3s ease-in-out infinite alternate;
+}
+
+@keyframes onda{
+    from{
+        transform: translateX(-200px);
+    }
+}
+
+
+
+@media(max-width: 375px){
+    .clock{
+        font-size: 1.5em;
+    }
+    
+}
+

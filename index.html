@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,21 @@
     <!-- FONTE -->
     <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <div class="clock">
-        <span id="s_horas"></span> : 
-        <span id="s_minutos"></span> :
+        <span id="s_horas">Aguarde ...</span>
+        <span id="s_minutos"></span>
         <span id="s_segundos"></span>
     </div>
 
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fff" fill-opacity="1" class="wave"
+            d="M0,224L48,240C96,256,192,288,288,277.3C384,267,480,213,576,192C672,171,768,181,864,208C960,235,1056,277,1152,288C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
