@@ -6,13 +6,22 @@ function time(){
     let minutos = agora.getMinutes();
     let segundos = agora.getSeconds();
 
-    if(String(segundos).length < 2){
+    s_segundos.innerHTML = segundos;
+    s_horas.innerHTML = horas;
+    s_minutos.innerHTML = minutos;
+
+    if(String(segundos).length == 1){
         s_segundos.innerHTML = `0${segundos}`;
-    }else{
-        s_segundos.innerHTML = segundos;
-        s_minutos.innerHTML = minutos;
-        s_horas.innerHTML = horas;
     }
+
+    if(String(horas).length == 1){
+        s_horas.innerHTML = `0${horas}`;
+    }
+
+    if(String(minutos).length == 1){
+        s_minutos.innerHTML = `0${minutos}`;
+    }
+    
 
 }
 
